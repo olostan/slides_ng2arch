@@ -1,0 +1,25 @@
+name: 'angular2arch'
+version: 0.0.1
+description: Angular 2 Architectures
+author: Valentyn Shybanov <olostan@gmail.com>
+#homepage: https://www.example.com
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+dependencies:
+  browser: '>=0.10.0 <0.12.0'
+  dacsslide: 'any'
+  angular: '>=1.0.0 <2.0.0'
+  csslib_transform: '>=0.0.1 <0.1.0'
+  pretty_samples: 'any'
+  dart_to_js_script_rewriter: '^0.1.0'
+  web_components: any
+
+transformers:
+- angular:
+    html_files:
+      - web/index.html
+- dacsslide
+- csslib_transform
+- dart_to_js_script_rewriter
