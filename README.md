@@ -1,3 +1,3 @@
 # Angular 2: Architecture behind it
 
-Compile with `peanut` and check github pages.
+Check https://olostan.github.io/slides_ng2arch/
