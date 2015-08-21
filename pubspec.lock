@@ -50,8 +50,10 @@ packages:
     source: hosted
     version: "0.0.2"
   dacsslide:
-    description: dacsslide
-    source: hosted
+    description:
+      path: "../../dart/dacsslide"
+      relative: true
+    source: path
     version: "0.0.11"
   dart_style:
     description: dart_style
@@ -177,6 +179,10 @@ packages:
     description: test
     source: hosted
     version: "0.12.4+4"
+  unittest:
+    description: unittest
+    source: hosted
+    version: "0.12.4"
   utf:
     description: utf
     source: hosted

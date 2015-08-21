@@ -1,5 +1,6 @@
 .pub
 packages
+.packages
 build
 .idea
 .packages

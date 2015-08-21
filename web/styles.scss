@@ -9,7 +9,17 @@ html, body {
     background-color: white;
     perspective: 900px;
     overflow: hidden;
-    color: #f55;
+    color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+body {  transition: 1.2s all; }
+.sf {
+  width: 100%;height: 100%;
+  background-image: url("assets/sf-paper.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .hidden { opacity:0; }
 controls {
@@ -25,10 +35,128 @@ symbol {
 comment {
     background-color: #222;
 }
-#ang2Title {
-    font-size: 55px;::down(120);
-}
+#ang2Title { font-size: 55px;::down(190);  }
+#ang2: down(60);
+#ang2logo: up(180);
+body.s1 { background-color: #fcf1d8;}
 .s1 {
-  #ang2: show;
-    #ang2Title:show;
+  #odessa: show;
+}
+body.s2 {  background-color: #0074C1;  }
+.s2 {
+  #ang2logo: show down(50);
+  #ang2: show down(50) delay(0.4);
+  #ang2Title:show down(50) delay(0.6);
+  #odessa: down(300) hide rotate(130);
+}
+#val{
+  ::scale(0.5,0.5) up(270) rotate(-50);
+  box-shadow: 0 0 95px black;
+}
+#val_qr: right(790);
+#val_qr {
+  &:after {
+    content:"http://olostan.name";
+    position:absolute;
+    font-size: 25px;
+    top:-35px;
+  }
+}
+#val_qr2 {
+  &:after {
+    content:"http://goo.gl/azuBfd";
+    position:absolute;
+    font-size: 25px;
+    top:-35px;
+    left:-30px;
+  }
+}
+#val_qr2: left(790);
+.s3 {
+  #ang2logo: down(298) left(215) scale(0.35,0.35);
+  #ang2: show down(50) delay(0);
+  #ang2Title:show down(40) delay(0);
+  #odessa: down(300) hide rotate(130);
+  #val: show down(150) rotate(50);
+  #val_qr: show left(500) delay(0.5);
+  #val_qr2: show right(500) delay(0.5);
+}
+
+#ang1: up(400) scale(1.7,1.7);
+#ang1d {::up(400); font-size: 42px;color: black;}
+body.s4 {  background-color: #EEE; }
+.s4 {
+  #ang2logo: down(598) hide;
+  #ang2: show down(450) hide;
+  #ang2Title:show down(440) hide;
+  #odessa: down(500) hide rotate(130) hide;
+  #val: show down(550) rotate(70) delay(0.2) hide;
+  #val_qr: down(500) rotate(70) delay(0.5) hide;
+  #val_qr2: down(500) rotate(70) delay(0.5) hide;
+  #ang1: show down(300) delay(0.7);
+  #ang1d: show down(430) delay(1.3);
+}
+#y2009 { font-size: 180px;::rotate(120);}
+.s5 {
+  #ang1: up(150) delay(0);
+  #ang1d{ ::up(190) delay(0); color: #888;}
+  #y2009{  ::show rotate(-120);; color: black;}
+  #ang2logo:  right(215);
+
+}
+.s6 {
+  #ang1: up(250) delay(0.3) hide;
+  #ang1d: up(200) delay(0) hide;
+  #y2009: up(400) hide;
+  #ang2logo: show up(800) scale(1,1);
+}
+body.s6 {  background-color: #0074C1;  }
+#lsel: rotate(0,90);
+.s7 {
+  #ang2logo: show rotate(0,180);
+  #lsel: show rotate(0,-90) delay(0.1);
+}
+#ljs{  ::down(500);color: #FF0;font-size:80px;}
+#les6{  ::down(500);color: #FF0;font-size:80px;}
+#ldart{  ::down(500);color: #FF0;font-size:80px;}
+#lts{  ::down(500);color: #FF0;font-size:80px;}
+.s8 {
+  #ang2logo: hide;
+  #lsel: up(300) delay(0);
+  #ljs: show up(500);
+}
+body.s9 {  background-color: #44F;  }
+.s9 {
+  #ljs: opacity(0.4) up(150);
+  #ldart: show up(500);
+}
+body.s10 {  background-color: #449;  }
+.s10 {
+  #ljs: opacity(0.2) up(50);
+  #ldart: opacity(0.4) up(120);
+  #les6: show up(500);
+}
+body.s11 {  background-color: #444;  }
+.s11 {
+  #ljs: opacity(0.05) up(30);
+  #ldart: opacity(0.1) up(50);
+  #les6: opacity(0.4) up(120);
+  #lts: show up(500);
+}
+#ts15: scale(0.1,0.1);
+.s12 {
+  #lsel: up(300) delay(0.4);
+  #ljs: up(230) hide delay(0.2);
+  #ldart: up(250) hide delay(0.2);
+  #les6: up(320) hide delay(0);
+  #lts: up(300) delay(0.6);
+  #ts15: show scale(1,1) delay(0.6);
+}
+.s13 {
+  #ts15: hide scale(-0.9,-0.9) delay(0);
+  #s_es5: show;
+}
+
+pre {
+  font-size:20px;
 }
