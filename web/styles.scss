@@ -152,11 +152,103 @@ body.s11 {  background-color: #444;  }
   #lts: up(300) delay(0.6);
   #ts15: show scale(1,1) delay(0.6);
 }
+#s_es5: rotate(-80) down(300);
+#s_es5dsl: rotate(-80) down(300);
+#s_es6: rotate(-80) down(300);
+#s_es6d: rotate(-80) down(300);
+#s_html { ::rotate(-80) down(300); width:800px;word-wrap: break-word;}
 .s13 {
   #ts15: hide scale(-0.9,-0.9) delay(0);
-  #s_es5: show;
+  #s_es5: show rotate(80) up(300);
 }
+.s14 {
+  #s_es5: hide rotate(80) up(300);
+  #s_es5dsl: show rotate(80) up(300);
+}
+.s15 {
+  #s_es5dsl: hide rotate(80) up(300);
+  #s_es6: show rotate(80) up(300);
+}
+.s16 {
+  #s_es6: hide rotate(80) up(300);
+  #s_es6d: show rotate(80) up(300);
+}
+.s17 {
+  #s_es6d: hide rotate(80) up(300);
+  #s_html: show rotate(80) up(300);
+}
+#no { ::down(500) left(200) scale(0.5,2);color: red;font-size: 200px;text-transform: uppercase;}
+#no_ctrl { ::down(390) right(80);color: white;font-size: 70px;}
+#no_pro { ::down(460) right(58);color: white;font-size: 70px;}
+#no_srv { ::down(540) right(40);color: white;font-size: 70px;}
+#no_fac { ::down(620) right(55);color: white;font-size: 70px;}
+.s18 {
+  #s_html: hide rotate(80) up(300);
+  #no: show up(540);
+  #no_ctrl: show up(545) delay(0.2);
+  #no_pro: show up(545) delay(0.4);
+  #no_srv: show up(545) delay(0.8);
+  #no_fac: show up(545) delay(1.2);
+}
+#classes { font-size: 140px;color: green;::down(300);text-shadow: 0 0 20px yellow;}
+.s19 {
+  #classes: show up(100);
+}
+#tmpl{  ::down(500);color: #FF0;font-size:80px;}
 
+.s20 {
+  #classes: hide up(500) delay(0.7);
+  #no: hide up(540);
+
+  #no_ctrl: hide up(545) delay(0.1);
+  #no_pro:  hide up(545) delay(0.2);
+  #no_srv:  hide up(545) delay(0.4);
+  #no_fac:  hide up(545) delay(0.6);
+  #lts: up(300) hide delay(0.6);
+  #tmpl: show up(500);
+}
+.s21 {
+  #tmpl: up(290);
+  #tmpl_sc: show;
+  #tmpl_s: show down(170);
+}
+#tmpl_a1: rotate(-80) down(300);
+#tmpl_a2: rotate(-80) down(300);
+#tmpl_a1 pre { font-size: 30px;}
+#tmpl_x: down(500);
+.s22 {
+  #tmpl_sc: rotate(90) hide down(500);
+  #tmpl_s: rotate(90) hide down(200);
+  #tmpl_a1: show rotate(80) up(400);
+  #tmpl_x: show up(450) delay(0.6);
+}
+.s23 {
+  #tmpl_a1: hide rotate(80) up(300);
+  #tmpl_x: hide rotate(80) up(300);
+  #tmpl_a2: show rotate(80) up(400);
+}
+#tmpl_sow: rotate(0,0,-900) scale(0.2,0.2);
+.s24 {
+  #tmpl_sow: show rotate(0,0,900) scale(0.8,0.8);
+}
+#tmpl_a2a: left(500) up(50);
+#tmpl_a2b: right(500) up(50);
+.s25 {
+  #tmpl_sow: hide up(500);
+  #tmpl_a2: hide up(400);
+  #tmpl_a2a: show right(300);
+  #tmpl_a2b: show left(300);
+}
+#change{  ::down(500);color: #FF0;font-size:80px;}
+
+.s26 {
+  #tmpl_a2a: hide rotate(0,90) left(300);
+  #tmpl_a2b: hide rotate(0,-90) right(300);
+  #tmpl: hide up(500);
+  #change: show up(500);
+}
 pre {
   font-size:20px;
+  padding: 40px;
+  outline: solid 5px #aaa;
 }
