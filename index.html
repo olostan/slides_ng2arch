@@ -1,0 +1,91 @@
+<!DOCTYPE html><!--
+  Copyright (c) 2015, Valentyn Shybanov, olostan@gmail.com. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+--><html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>Angular 2: Architecture decisions behind it</title>
+    <link rel="stylesheet" href="packages/dacsslide/presentation.css">
+    <link rel="stylesheet" href="packages/dacsslide/comment.css">
+    <link rel="stylesheet" href="styles.css">
+    <script async="" src="main.dart.js"></script>
+    
+</head>
+
+<body presentation-classes="">
+  <div class="sf">
+  <presentation slides="55" class="hidden">
+      <symbol id="odessa"><img src="assets/Odesa_JS_logo_big.png"> </symbol>
+      <symbol id="ang2logo"><img src="assets/shield-large@2x.png"></symbol>
+      <symbol id="ang2">Angular 2</symbol>
+      <symbol id="ang2Title">Architectures behind it</symbol>
+      <symbol id="val"><img src="assets/Valentyn_gde_long.jpg"> </symbol>
+      <symbol id="val_qr"><img src="assets/olo_qr.svg"> </symbol>
+      <symbol id="val_qr2"><img src="assets/ng2arch_qr.svg"> </symbol>
+      <symbol id="ang1"><img src="assets/AngularJS-large.png"> </symbol>
+      <symbol id="ang1d">Superheroic JavaScript MVW Framework</symbol>
+      <symbol id="y2009">2009</symbol>
+      <symbol id="lsel">Language</symbol>
+      <symbol id="ljs">JS/ES5</symbol>
+      <symbol id="ldart">Dart</symbol>
+      <symbol id="les6">ES6 (Traceur)</symbol>
+      <symbol id="lats">AtScript</symbol>
+      <symbol id="lts">TypeScript</symbol>
+      <symbol id="ts15"><img src="assets/ts15.png"> </symbol>
+      <symbol id="s_es5" track="" sample="samples/sample-es5.js"></symbol>
+      <symbol id="s_es5dsl" track="" sample="samples/sample-es5dsl.js"></symbol>
+      <symbol id="s_es6" track="" sample="samples/sample-es6.js"></symbol>
+      <symbol id="s_es6d" track="" sample="samples/sample-es6d.js"></symbol>
+      <symbol id="s_html" track="" sample="samples/sample.html"></symbol>
+      <symbol id="no">No</symbol>
+      <symbol id="no_ctrl">Controllers</symbol>
+      <symbol id="no_pro">Providers</symbol>
+      <symbol id="no_srv">Services</symbol>
+      <symbol id="no_fac">Factories</symbol>
+      <symbol id="classes">Classes</symbol>
+      <symbol id="tmpl_sc"><img src="assets/Scary_05.gif"> </symbol>
+      <symbol id="tmpl">Template Syntax</symbol>
+      <symbol id="tmpl_s" sample="#sample_t"></symbol>
+      <symbol id="tmpl_a1" sample="#sample_a1"></symbol>
+      <sample id="sample_t"><input [(ng-model)]="name"></sample>
+      <sample id="sample_a1"><my-directive a="x"></my-directive></sample>
+
+      <symbol id="tmpl_x">x - ?</symbol>
+      <sample id="sample_a2">
+<my-directive a="literal"></my-directive>
+<my-directive [a]="binding"></my-directive>
+<my-directive (a)="expression"></my-directive></sample>
+      <symbol id="tmpl_a2" sample="#sample_a2"></symbol>
+      <symbol id="tmpl_sow"><img src="assets/so_what.jpg"></symbol>
+      <symbol id="tmpl_a2a" sample="samples/sample_a2a.html"></symbol>
+      <symbol id="tmpl_a2b" sample="samples/sample_a2b.html"></symbol>
+      <symbol id="change">Change Detection</symbol>
+
+      <!--
+            http://angular-tips.com/blog/2015/06/why-will-angular-2-rock/
+            https://github.com/mhevery/angular-u-app
+            https://www.youtube.com/watch?v=aHGmj_fqPLE&feature=share
+
+        some history
+            Angular 1: 2009, many new staff appeared
+            make it modern
+        1. TypeScript/ES6
+            Modules
+            No Controllers,Providers, Services, Factories -> Classes/Injectables
+        2. Template Syntax
+            http://victorsavkin.com/post/119943127151/angular-2-template-syntax
+
+        2. Change Detection
+        * ZoneJS
+        3. Renderer
+        4. Routing
+        * Animations
+      -->
+
+  </presentation>
+  </div>
+
+
+</body></html>
